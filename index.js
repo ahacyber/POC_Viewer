@@ -1,10 +1,10 @@
-import * as THREE from '../build/three.module.js';
-import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js"
-import { GLTFLoader } from "../examples/jsm/loaders/GLTFLoader.js"
-import Stats from "../examples/jsm/libs/stats.module.js";
+import * as THREE from '../POC_Viewer/build/three.module.js';
+import { OrbitControls } from "../POC_Viewer/examples/jsm/controls/OrbitControls.js"
+import { GLTFLoader } from "../POC_Viewer/examples/jsm/loaders/GLTFLoader.js"
+import Stats from "../POC_Viewer/examples/jsm/libs/stats.module.js";
 
-import { Octree } from "../examples/jsm/math/Octree.js"
-import { Capsule } from "../examples/jsm/math/Capsule.js"
+import { Octree } from "../POC_Viewer/examples/jsm/math/Octree.js"
+import { Capsule } from "../POC_Viewer/examples/jsm/math/Capsule.js"
 
 class App {
     constructor() {
@@ -103,7 +103,7 @@ class App {
 
         const loader = new GLTFLoader();
 
-        loader.load("./data/character.glb", (gltf) => {
+        loader.load("./POC_Viewer/data/character.glb", (gltf) => {
             const model = gltf.scene;
             this._scene.add(model);
 
@@ -158,7 +158,7 @@ class App {
             // this._worldOctree.fromGraphNode(boxM);
         });
 
-        loader.load("./data/daejoen_step06_wall_test05.glb", (gltf) => {
+        loader.load("./POC_Viewer/data/daejoen_step06_wall_test05.glb", (gltf) => {
             const model = gltf.scene;
 
             this._scene.add(model);
