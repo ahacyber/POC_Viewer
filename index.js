@@ -103,7 +103,7 @@ class App {
 
         const loader = new GLTFLoader();
 
-        loader.load("./POC_Viewer/data/character.glb", (gltf) => {
+        loader.load("../POC_Viewer/data/character.glb", (gltf) => {
             const model = gltf.scene;
             this._scene.add(model);
 
@@ -158,7 +158,7 @@ class App {
             // this._worldOctree.fromGraphNode(boxM);
         });
 
-        loader.load("./POC_Viewer/data/daejoen_step06_wall_test05.glb", (gltf) => {
+        loader.load("../POC_Viewer/data/daejoen_step06_wall_test05.glb", (gltf) => {
             const model = gltf.scene;
 
             this._scene.add(model);
