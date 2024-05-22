@@ -103,7 +103,7 @@ class App {
 
         const loader = new GLTFLoader();
 
-        loader.load("../POC_Viewer/data/character.glb", (gltf) => {
+        loader.load("../POC_Viewer/data/aj_character05.glb", (gltf) => {
             const model = gltf.scene;
             this._scene.add(model);
 
