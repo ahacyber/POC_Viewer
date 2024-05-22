@@ -74,8 +74,8 @@ class App {
                 this._acceleration = 3;                
             } else {
                 this._currentAnimationAction = this._animationMap["Walk"];                
-                //this._speed = 80;
-                this._maxSpeed = 80;
+                //this._speed = 120;
+                this._maxSpeed = 120;
                 this._acceleration = 3;
             }
         } else {
