@@ -140,12 +140,12 @@ class App {
                 diameter/2
             );            
 
-            const axisHelper = new THREE.AxesHelper(1000);
-            this._scene.add(axisHelper);
+            //const axisHelper = new THREE.AxesHelper(1000);
+            //this._scene.add(axisHelper);
 
-            const boxHelper = new THREE.BoxHelper(model);
-            this._scene.add(boxHelper);          
-            this._boxHelper = boxHelper;
+            //const boxHelper = new THREE.BoxHelper(model);
+            //this._scene.add(boxHelper);          
+            //this._boxHelper = boxHelper;
             this._model = model;  
 
             // const boxG = new THREE.BoxGeometry(100, diameter-5, 100);
@@ -213,7 +213,7 @@ class App {
         shadowLight.position.set(-300, 1500, 800);
         shadowLight.target.position.set(100, 0, 200);
         const directionalLightHelper = new THREE.DirectionalLightHelper(shadowLight, 10);
-        this._scene.add(directionalLightHelper);
+        //this._scene.add(directionalLightHelper);
         
         this._scene.add(shadowLight);
         this._scene.add(shadowLight.target);
@@ -226,8 +226,8 @@ class App {
         shadowLight.shadow.camera.near = 100;
         shadowLight.shadow.camera.far = 3000;
         shadowLight.shadow.radius = 5;
-        const shadowCameraHelper = new THREE.CameraHelper(shadowLight.shadow.camera);
-        this._scene.add(shadowCameraHelper);
+        //const shadowCameraHelper = new THREE.CameraHelper(shadowLight.shadow.camera);
+        //this._scene.add(shadowCameraHelper);
     }    
 
     _previousDirectionOffset = 0;
