@@ -21,6 +21,7 @@ class App {
         this._renderer = renderer;
 
         const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xe2e2e2);
         this._scene = scene;
 
         //this._setupOctree();
